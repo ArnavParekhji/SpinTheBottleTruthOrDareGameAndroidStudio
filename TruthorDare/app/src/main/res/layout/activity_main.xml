@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/floor"
+    tools:context="com.example.arnavparekh.truthordare.MainActivity">
+
+    <ImageView
+        android:id="@+id/bottle"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:onClick="spinBottle"
+        app:srcCompat="@drawable/bottle" />
+
+    <Button
+        android:id="@+id/truthButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottle"
+        android:layout_alignStart="@+id/bottle"
+        android:layout_below="@+id/bottle"
+        android:layout_marginTop="26dp"
+        android:text="TRUTH" />
+
+    <Button
+        android:id="@+id/dareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bottle"
+        android:layout_alignRight="@+id/bottle"
+        android:layout_alignTop="@+id/truthButton"
+        android:text="DARE" />
+
+    <TextView
+        android:id="@+id/todTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:textSize="30sp"
+        android:text="TRUTH OR DARE?"
+        android:textColor="@android:color/background_light" />
+</RelativeLayout>
